@@ -21,7 +21,7 @@ from django.urls import path, include
 urlpatterns = [
     path('jet/', include('jet.urls', 'jet')),
     path('jet/dashboard/', include('jet.dashboard.urls', 'jet-dashboard')),
-    path("admin/", admin.site.urls),
+    path("everyone_but_is_admin/", admin.site.urls),
     path("post/", include("posts.urls")),
     path('api-auth/', include('rest_framework.urls')),
     path("api/v1/", include("api.urls")),
