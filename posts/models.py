@@ -18,7 +18,7 @@ class Post(models.Model):
 
     def image_tag(self):
         try:
-            return format_html("<img width=100 height=75 src='{}'>".format(self.image.url))
+            return format_html("<img width=100 height=85 src='{}'>".format(self.image.url))
         except:
             pass
     image_tag.short_description = "image"
