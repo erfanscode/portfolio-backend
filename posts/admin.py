@@ -6,4 +6,5 @@ class PostAdmin(admin.ModelAdmin):
     list_display = ("title", "short_description", "link", "image_tag", "created")
 
 
+admin.site.site_header = "My Panel"
 admin.site.register(Post, PostAdmin)
