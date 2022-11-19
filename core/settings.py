@@ -111,6 +111,15 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+# Django REST framework:
+REST_FRAMEWORK = {
+    "DEFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.IsAdminUser",
+    ],
+}
+
+
+
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
